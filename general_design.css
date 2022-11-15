@@ -49,6 +49,9 @@ main {
     border-color: grey;
     border-left: none;
   }
+  header a {
+    text-decoration: none;
+  }
 }
 @media screen and (max-width: 999px) {
   header {
@@ -218,4 +221,35 @@ footer {
   font-size: 20px;
   text-align: center;
   bottom: 0;
+}
+/* animation */
+/*header:hover {
+  background: radial-gradient(
+    circle,
+    rgba(34, 19, 89, 1) 54%,
+    rgba(135, 31, 170, 1) 74%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(34, 19, 89, 1) 30%,
+    rgba(255, 255, 255, 1) 74%
+  );
+}*/
+header a:hover {
+  border-style: solid;
+  border-color: white;
+  padding: 0 5px;
+}
+.multi_section:hover {
+  transition-duration: 4s;
+  background: linear-gradient(
+    318deg,
+    rgba(255, 255, 255, 0.3648809865743172) 0%,
+    rgba(212, 21, 218, 0.5665616588432247) 18%,
+    rgba(255, 173, 58, 1) 90%
+  );
+  color: white;
+}
+.multi_section:hover a {
+  color: white;
 }
