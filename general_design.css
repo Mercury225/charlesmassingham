@@ -31,9 +31,7 @@ main {
   padding: 0 12%;
   flex-wrap: wrap;
 }
-#main_sections a {
-  color: rgb(94, 25, 148);
-}
+
 /*removes the menu header*/
 @media screen and (min-width: 1000px) {
   header {
@@ -178,6 +176,9 @@ main {
 }
 .multi_section p {
   font-family: "DM Sans", sans-serif;
+}
+.multi_section a {
+  color: rgb(94, 25, 148);
 }
 .multi_section h2 {
   margin-bottom: 2%;
