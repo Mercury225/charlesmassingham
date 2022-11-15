@@ -1,0 +1,214 @@
+/*1) Applies to all pages*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#header_and_main {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+main {
+  width: 100%;
+  margin: 2% 0 2% 2%;
+  margin-left: 50%;
+}
+#main_sections /*selects all the sections*/ {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 2%;
+  padding: 0 12%;
+  flex-wrap: wrap;
+}
+/*removes the menu header*/
+@media screen and (min-width: 1000px) {
+  header {
+    height: fit-content;
+    width: 45%;
+    position: fixed;
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 4% 0;
+    background-color: rgb(172, 69, 232);
+    border-radius: 0px 60px 0 0px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: grey;
+    border-left: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  header {
+    display: none;
+  }
+  main {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+/*phone header with button*/
+#box {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(rgb(224, 229, 148), white);
+}
+#inner_box {
+  height: 80px;
+  width: 80px;
+  background-image: url(design.png);
+  background-position: center;
+}
+
+#box ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#iphone_nav_left {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  margin-right: 62%;
+  width: 40%;
+}
+
+#iphone_nav_left ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#iphone_nav_left li {
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+  padding: 0 20px;
+  margin: 5px 0;
+}
+#iphone_nav_left li a {
+  color: rgb(94, 25, 148);
+}
+#iphone_nav_right {
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  width: 42%;
+  margin-left: 60%;
+}
+
+#iphone_nav_right ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#iphone_nav_right li {
+  font-family: "DM Sans", sans-serif;
+  list-style: none;
+  padding: 0 20px;
+  margin: 5px 0;
+}
+#iphone_nav_right li a {
+  color: rgb(94, 25, 148);
+}
+@media screen and (min-width: 1000px) {
+  #iphone_nav_left,
+  #iphone_nav_right {
+    display: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  #box {
+    position: fixed;
+  }
+  #inner_box {
+    position: fixed;
+  }
+  main {
+    margin-top: calc(2% + 170px);
+  }
+}
+#main_nav li {
+  margin: 20px 0;
+  list-style: none;
+}
+#main_nav li a {
+  color: white;
+}
+
+/*2) This section applies to pages with more than one sub-heading includes Services, Ongoing Projects and Home Page*/
+.multi_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 7%;
+  margin: 0 1% 3% 1%;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 2;
+  width: 500px;
+  height: auto;
+  background-color: white;
+  /*border*/
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 1px;
+}
+.multi_section p {
+  font-family: "DM Sans", sans-serif;
+}
+.multi_section h2 {
+  margin-bottom: 2%;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.multi_section h3 {
+  font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (max-width: 999px) {
+  .multi_section {
+    margin: 0 0 10% 0;
+  }
+}
+
+/*This section applies to pages with only one sub-heading includes About Me, Contact Me*/
+/*single_page selects the whole section*/
+.single_page {
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  margin: 5%;
+}
+.single_page p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+footer {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  bottom: 0;
+}
