@@ -100,6 +100,7 @@ main {
 }
 #iphone_nav_left li {
   font-family: "DM Sans", sans-serif;
+  font-size: 18px;
   list-style: none;
   padding: 0 20px;
   margin: 5px 0;
@@ -123,6 +124,7 @@ main {
 }
 #iphone_nav_right li {
   font-family: "DM Sans", sans-serif;
+  font-size: 18px;
   list-style: none;
   padding: 0 20px;
   margin: 5px 0;
